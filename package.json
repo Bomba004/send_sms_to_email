@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "<h1 align=\"center\">BackEnd Projects 🌐- Express</h1>",
   "scripts": {
-    "start": "concurrently \"nodemon src/server.js\"",
+    "start": "node server.js",
     "dev": "concurrently \"nodemon src/server.js\""
   },
   "keywords": [],
