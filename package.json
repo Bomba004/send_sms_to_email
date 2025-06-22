@@ -1,0 +1,24 @@
+{
+  "name": "send_sms_to_email",
+  "version": "0.0.1",
+  "description": "<h1 align=\"center\">BackEnd Projects 🌐- Express</h1>",
+  "scripts": {
+    "start": "concurrently \"nodemon src/server.js\"",
+    "dev": "concurrently \"nodemon src/server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  },
+  "type": "module",
+  "presets": ["@babel/preset-env"]
+}
