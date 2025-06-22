@@ -39,6 +39,11 @@ const transport = nodemailer.createTransport({
   },
 });
 
+//#region 🧭 إعداد المسارات
+// الصفحة الرئيسية
+// app.get('/', (req, res) => { res.sendFile(join(__dirname, '..', 'public', 'index.html')); });
+app.get('/', (req, res) => { res.send('Hello to BomBa Server ♥'); });
+
 // مسار API لإرسال رسالة نصية عادية
 app.post('/api/send-text-email', async (req, res) => {
   try {
@@ -131,6 +136,7 @@ app.get('/send-email-form', (req, res) => {
     </html>
   `);
 });
+//#endregion
 
 //#region 🚀 تشغيل الخادم (SERVER LISTEN)
 
